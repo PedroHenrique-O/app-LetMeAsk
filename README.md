@@ -6,7 +6,13 @@
 <li> Firebase </li>
 <li> Typescript </li>
 
-<h1></h1>
+<h1>Hospedado:</h1>
+
+<ui> Através do Firebase storage: </ui>
+
+<li>  <a href="https://pergunte-agora.web.app/" rel="nofollow">Link para a aplicação: LetMeAsk</a> </li> 
+
+
 
 
 <h1>Sobre a aplicação: </h1>
@@ -18,5 +24,5 @@ Crie salas de forma prática e rápida para perguntas e respostas: "Q&E" a parti
 <h1> Layout do projeto: </h1>
 
 
-<li>  <a href="https://www.figma.com/community/file/1009824839797878169/Letmeask" rel="nofollow">Layout Web</a> </li> 
+<li>  <a href="https://www.figma.com/community/file/1009824839797878169/Letmeask" rel="nofollow">Figma: Layout Web</a> </li> 
 
