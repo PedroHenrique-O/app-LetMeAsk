@@ -6,7 +6,7 @@ import "../styles/auth.scss";
 import { Button } from "../components/Button";
 import { useAuth } from "../hooks/useAuth";
 import { FormEvent, useState } from "react";
-import { get, getDatabase, ref } from "@firebase/database";
+import { endAt, get, getDatabase, ref } from "@firebase/database";
 
 export function Home() {
   const { user, signInWithGoogle } = useAuth();
@@ -29,7 +29,11 @@ export function Home() {
     const roomRef = get(ref(database, `rooms/${roomCode}`));
 
     if (!(await roomRef).exists()) {
-      alert("Room does not exists.");
+      alert("A sala não existe!.");
+      return;
+    }
+    if ((await roomRef).val().endTime) {
+      alert("A sala está fechada!");
       return;
     }
 

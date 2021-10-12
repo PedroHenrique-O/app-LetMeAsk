@@ -11,6 +11,13 @@ export type FireBaseQuestions = Record<
     content: string;
     isAnswered: false;
     isHighlighted: false;
+    likeId: string | undefined;
+    likes: Record<
+      string,
+      {
+        authorId: string;
+      }
+    >;
   }
 >;
 export type Questions = {
@@ -23,4 +30,6 @@ export type Questions = {
   isAnswered: false;
 
   isHighlighted: false;
+  likeCount: number;
+  likeId: string | undefined;
 };

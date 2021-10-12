@@ -13,9 +13,20 @@
       > img {
         max-height: 45px;
       }
+
+      > div {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        button {
+          height: 40px;
+        }
+      }
     }
   }
-  .main-content {
+
+  main {
     max-width: 800px;
     margin: 0 auto;
 
@@ -29,6 +40,7 @@
         font-size: 24px;
         color: #29292e;
       }
+
       span {
         margin-left: 16px;
         background: #e559f9;
@@ -41,7 +53,7 @@
     }
 
     form {
-      #textarea {
+      textarea {
         width: 100%;
         border: 0;
         padding: 16px;
@@ -51,25 +63,51 @@
         resize: vertical;
         min-height: 130px;
       }
-    }
-  }
 
-  .question-list {
-    margin-top: 32px;
-  }
-  .user-info {
-    display: flex;
-    align-items: center;
-    img {
-      width: 32px;
-      height: 32px;
-      border-radius: 100px;
+      .form-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 16px;
+
+        .user-info {
+          display: flex;
+          align-items: center;
+
+          img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+          }
+
+          span {
+            margin-left: 8px;
+            color: #29292e;
+            font-weight: 500;
+            font-size: 14px;
+          }
+        }
+
+        > span {
+          font-size: 14px;
+          color: #737380;
+          font-weight: 500;
+
+          button {
+            background: transparent;
+            border: 0;
+            color: #835afd;
+            text-decoration: underline;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+          }
+        }
+      }
     }
-    span {
-      margin-left: 8px;
-      color: #29292e;
-      font-weight: 500px;
-      font-size: 14px;
-    }
+
+    // .question-list {
+    //   margin-top: 32px;
+    // }
   }
 }
